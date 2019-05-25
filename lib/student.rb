@@ -51,9 +51,9 @@ class Student
   end
 
   def self.new_from_db(row)
-    # name = nil
-    # grade = nil
-    new_student = Student.new
+    name = nil
+    grade = nil
+    new_student = Student.new(name, grade)
     new_student.id = row[0]
     new_student.name = row[1]
     new_student.grade = row[2]
